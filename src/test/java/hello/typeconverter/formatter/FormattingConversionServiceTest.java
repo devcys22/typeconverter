@@ -10,8 +10,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FormattingConversionServiceTest {
     @Test
     void formattingConversionService() {
-        DefaultFormattingConversionService conversionService = new
-                DefaultFormattingConversionService();
+        DefaultFormattingConversionService conversionService = new DefaultFormattingConversionService();
+
         //컨버터 등록
         conversionService.addConverter(new StringToIpPortConverter());
         conversionService.addConverter(new IpPortToStringConverter());
